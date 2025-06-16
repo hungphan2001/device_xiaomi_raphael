@@ -72,6 +72,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
+	    vendor/lib/libaudioroute_ext.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libaudioroute.so" "libaudioroute-v34.so" "${2}"
+            ;;
+	    vendor/lib/hw/audio.primary.msmnile.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libaudioroute.so" "libaudioroute-v34.so" "${2}"
+            ;;
             system_ext/lib/libwfdservice.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.media.audio.common.types-V1-cpp.so" "android.media.audio.common.types-V4-cpp.so" "${2}"
