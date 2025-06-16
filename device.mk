@@ -511,6 +511,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true
 
+# FUN time
+PRODUCT_PRODUCT_PROPERTIES += \
+	persist.sys.usb.config=mtp,adb \
+	persist.service.debuggable=1 \
+	ro.adb.secure=0 \
+	ro.debuggable=1 \
+	ro.secure=0 
+
 # QMI
 PRODUCT_PACKAGES += \
     libcurl.vendor \
