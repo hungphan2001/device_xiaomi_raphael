@@ -69,7 +69,7 @@ system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk;NODEXPO
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -158,8 +158,8 @@ vendor/lib64/libcdsprpc.so|c03fcc9f80e9ec660d70ea55545308cb057faf16
 vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
 # CNE - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/app/CneApp/CneApp.apk;NODEXPO;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
-vendor/app/IWlanService/IWlanService.apk;NODEXPO|9ea57bfbf58799a564fcf498de9f5fe3506f7342
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
+vendor/app/IWlanService/IWlanService.apk|9ea57bfbf58799a564fcf498de9f5fe3506f7342
 vendor/bin/cnd|953858869b513828894800bf8556f3845d9665a2
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -473,7 +473,7 @@ system_ext/lib64/libdpmfdmgr.so|da636fca9a9a91a897d17fd519448b10053a696b
 system_ext/lib64/libdpmframework.so|d974f04f110b3c1a1282d78bb0ff8a29dc022439
 system_ext/lib64/libdpmtcm.so|5521469cac3a2bec3da66cd36637df83ee59b97e
 system_ext/lib64/vendor.qti.diaghal@1.0.so|339886a9895a29dfae15e8708d6eeacda1663908
-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk;NODEXPO|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
 
 # DPM (vendor) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/dpmQmiMgr|e682a4c6e684be96de179158c65e5732f052ab2c
@@ -696,8 +696,8 @@ vendor/firmware/a650_sqe.fw
 vendor/firmware/a650_zap.elf
 
 # HotwordEnrollment - from MIUI 12.5.2
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;NODEXPO|62e301d2f386771facd9a9aa546c0fcc241116da
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;NODEXPO|8639661f6fad570723bc6f2759da76604bd804fa
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|62e301d2f386771facd9a9aa546c0fcc241116da
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|8639661f6fad570723bc6f2759da76604bd804fa
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
 
@@ -899,7 +899,7 @@ system_ext/lib64/libdiag_system.so|46b48593c913d5cbb05518b31721bb0f33e6c1ba
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0394fbe375893f9aa2fee5e28e5c657575025a12
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|a8271a46c31ed50a1f7f94d7ec78fb534f432296
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|34da5e45ae4817ccff75c6b8d1d0c125ebd253ed
-system_ext/priv-app/ims/ims.apk;NODEXPO|ed68ecd630ddbd49e88bd0b2e3b50ee35c334ef0
+system_ext/priv-app/ims/ims.apk|ed68ecd630ddbd49e88bd0b2e3b50ee35c334ef0
 
 # Radio (IMS) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/ims_rtp_daemon|514b4f3a8483c21526d98634aaf8f01e3a59328a
@@ -954,12 +954,12 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|460e589128fce
 
 # Radio (system) - from LA.QSSI.12.0.r1-05800.02-qssi.0
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk;NODEXPO|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 system_ext/framework/qcrilhook.jar|f2888f922b8347417dfa86741feb8348795fce6f
 system_ext/framework/qti-telephony-common.jar|a22ed88e0cd81ea8c4788c26494c8b5fd666ec7c
-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk;NODEXPO|60af440aae61fcd6939af56a0b94d9b9ef5ebd55
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|60af440aae61fcd6939af56a0b94d9b9ef5ebd55
 
 # Radio (vendor) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/ATFWD-daemon|98b712409955b49330f7e179da8019be723850a3
@@ -1139,7 +1139,7 @@ vendor/lib64/libscveObjectTracker.so|0cf7d3128ae0019d882da5c9d8d9186d549177d1
 vendor/lib64/libscveObjectTracker_stub.so|6f45aa215de07dfeacf811c06af750206bb1cf58
 
 # Soter
--app/SoterService/SoterService.apk;NODEXPO
+-app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1155,7 +1155,7 @@ vendor/lib64/libthermalclient.so|0a12301d1557583db10f730d1d3cced841448b99
 vendor/bin/thermal-engine|01cb7dc998c39016b54089c18921ad7d65b3c675
 
 # Time - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/app/TimeService/TimeService.apk;NODEXPO|92317b3b72586489456d37057b4c3c8e55863923
+vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
 vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
@@ -1185,10 +1185,10 @@ system_ext/lib/libwfdconfigutils.so|d3da0bd6262ef0df469fc0301ec83393a27df839
 system_ext/lib/libwfddisplayconfig.so|bb4abda7d818a359975b2c2b182894a4a13b7cf4
 system_ext/lib/libwfdmminterface.so|bdc4df873914ede0a1e8951e749f9d73b06736d1
 system_ext/lib/libwfdmmsink.so|d135f0e014ba74e74d1e655ddd57a4de5c748635
-system_ext/lib/libwfdmmsrc_system.so|691444a4ed63a9e677805d1143f9eb41d35e3d0b
+system_ext/lib/libwfdmmsrc_system.so;DISABLE_CHECKELF|691444a4ed63a9e677805d1143f9eb41d35e3d0b
 system_ext/lib/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|220b254508029cc697b81e57b47cf05c08d14197
 system_ext/lib/libwfdrtsp.so|7472eba290ffec3df7309099ace756b18219f97d
-system_ext/lib/libwfdservice.so|2e4fe438a97655fbd5400d6be0fa199bf6f62185
+system_ext/lib/libwfdservice.so;DISABLE_CHECKELF|2e4fe438a97655fbd5400d6be0fa199bf6f62185
 system_ext/lib/libwfdsinksm.so|ad3043a2292f29cc4b2854ea692b7c75acb29049
 system_ext/lib/libwfduibcinterface.so|d3fef4e928f1e93b9a868bc99bb2228650e1adac
 system_ext/lib/libwfduibcsink.so|3421f99b8cb2ba2ab0946660e6cbeec7300ed447
@@ -1208,10 +1208,10 @@ system_ext/lib64/libwfdconfigutils.so|6c64656db5a843bf4db88089c279e7bc9255b942
 system_ext/lib64/libwfddisplayconfig.so|2f251251acd4ef8a8c04aa8b1504ae72ec31d7f2
 system_ext/lib64/libwfdmminterface.so|190b323e70bad7c601e2b177718d448af49a08a6
 system_ext/lib64/libwfdmmsink.so|645e1cb15aa8870a764400351498889e2e251ef0
-system_ext/lib64/libwfdmmsrc_system.so|40c730813873f431d6b4523a0bec8357e9585ec6
+system_ext/lib64/libwfdmmsrc_system.so;DISABLE_CHECKELF|40c730813873f431d6b4523a0bec8357e9585ec6
 system_ext/lib64/libwfdnative.so|79825bf4ea39193c5e82bf3e6f45c3614066e15c
 system_ext/lib64/libwfdrtsp.so|6b5b236380a4413e656f41aad45a95304f2e3b30
-system_ext/lib64/libwfdservice.so|fd0866db9818e5c75f7842fc78023e398dbe91a9
+system_ext/lib64/libwfdservice.so;DISABLE_CHECKELF|fd0866db9818e5c75f7842fc78023e398dbe91a9
 system_ext/lib64/libwfdsinksm.so|4d1cfe73d136a95ad3e4d8939a9744f41177c737
 system_ext/lib64/libwfduibcinterface.so|96ed507b1698e845e3c0b73f39515aefa5971fff
 system_ext/lib64/libwfduibcsink.so|626cd1be5dcb131dc4b3ed53ed193fa082a0c617
@@ -1220,7 +1220,7 @@ system_ext/lib64/libwfduibcsrc.so|67630b36b0a75ceb0cb32d51b8254b0d2b6d6f92
 system_ext/lib64/libwfduibcsrcinterface.so|fc3e7f6b3d1f1d50cc54d2037f8cb30785731f60
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|c5e697e8c93fa4e752830baf0a8626f8cf40e793
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so|c3f9d7afb624fa739f0b64e7da010f7176136cb3
-system_ext/priv-app/WfdService/WfdService.apk;NODEXPO|7a756afb81934a02cd54f8316b7922279766b043
+system_ext/priv-app/WfdService/WfdService.apk|7a756afb81934a02cd54f8316b7922279766b043
 
 # WiFi Display (vendor) - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/bin/wfdhdcphalservice|40c3d329f49cbb56286d6a550cc8b12ac95048df

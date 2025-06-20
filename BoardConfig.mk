@@ -8,7 +8,7 @@ DEVICE_PATH := device/xiaomi/raphael
 KERNEL_PATH := device/xiaomi/raphael-kernel
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+#BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Architecture
 TARGET_ARCH := arm64
