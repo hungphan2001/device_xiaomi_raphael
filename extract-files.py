@@ -68,10 +68,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
 	.patchelf_version('0_17_2')
-        .add_needed('libcrypto_shim.so'),
+        .add_needed('libcrypto_shim.so')
+	.replace_needed('libcrypto.so', 'libcrypto-v33.so'),
     'vendor/lib64/mediadrm/libwvdrmengine.so': blob_fixup()
 	.patchelf_version('0_17_2')
-        .add_needed('libcrypto_shim.so'),
+        .add_needed('libcrypto_shim.so')
+	.replace_needed('libcrypto.so', 'libcrypto-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
