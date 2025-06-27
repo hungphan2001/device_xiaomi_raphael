@@ -19,7 +19,7 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Gapps
-#TARGET_BUILD_GAPPS := true
+WITH_GMS := true
 
 # Boot animation
 scr_resolution := 1080
