@@ -26,7 +26,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_HAS_UDFPS := true
-
+WITH_GMS := true
 # Bypass charging node /sys/class/power_supply/battery/input_suspend
 BYPASS_CHARGE_SUPPORTED := true
 
