@@ -9,7 +9,7 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT "Xiaomi/raphael/raphael:11/RKQ1.200826.002/V12.5.2.0.RFKMIXM:user/release-keys"
+#define FINGERPRINT "google/husky_beta/husky:16/BP41.250822.010/14082742:user/release-keys"
 
 static const variant_info_t raphael_global_info = {
     .hwc_value = "GLOBAL",
