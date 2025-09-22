@@ -340,8 +340,6 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_raphael)
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
@@ -553,10 +551,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor
-
-# Recovery
-PRODUCT_PACKAGES += \
-    init_xiaomi_raphael.recovery
 
 # Seccomp
 PRODUCT_COPY_FILES += \
